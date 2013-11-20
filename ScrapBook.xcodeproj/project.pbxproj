@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B70A168717FBCCC700728B94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A168617FBCCC700728B94 /* Foundation.framework */; };
+		B70A168917FBCCC700728B94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A168817FBCCC700728B94 /* CoreGraphics.framework */; };
+		B70A168B17FBCCC700728B94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A168A17FBCCC700728B94 /* UIKit.framework */; };
+		B70A169117FBCCC700728B94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B70A168F17FBCCC700728B94 /* InfoPlist.strings */; };
+		B70A169317FBCCC700728B94 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A169217FBCCC700728B94 /* main.m */; };
+		B70A169717FBCCC700728B94 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A169617FBCCC700728B94 /* AppDelegate.m */; };
+		B70A169917FBCCC700728B94 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B70A169817FBCCC700728B94 /* Images.xcassets */; };
+		B70A16A017FBCCC700728B94 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A169F17FBCCC700728B94 /* XCTest.framework */; };
+		B70A16A117FBCCC700728B94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A168617FBCCC700728B94 /* Foundation.framework */; };
+		B70A16A217FBCCC700728B94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70A168A17FBCCC700728B94 /* UIKit.framework */; };
+		B70A16AA17FBCCC700728B94 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B70A16A817FBCCC700728B94 /* InfoPlist.strings */; };
+		B70A16AC17FBCCC700728B94 /* ScrapBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A16AB17FBCCC700728B94 /* ScrapBookTests.m */; };
+		B70A16BA17FBCD4E00728B94 /* Scrap.m in Sources */ = {isa = PBXBuildFile; fileRef = B70A16B917FBCD4E00728B94 /* Scrap.m */; };
+		B7136E10180E9DFD00F01E24 /* AddScrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7136E0E180E9DFD00F01E24 /* AddScrapViewController.m */; };
+		B7136E11180E9DFD00F01E24 /* AddScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7136E0F180E9DFD00F01E24 /* AddScrapViewController.xib */; };
+		B722E75A180398AD00A748C1 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B722E759180398AD00A748C1 /* libsqlite3.dylib */; };
+		B722E9541803994A00A748C1 /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = B722E9531803994A00A748C1 /* Database.m */; };
+		B72751E118174BD70085C8CF /* CropRegionView.m in Sources */ = {isa = PBXBuildFile; fileRef = B72751E018174BD70085C8CF /* CropRegionView.m */; };
+		B74A4CE117FBEBDE0005D572 /* ScrapBookTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CE017FBEBDE0005D572 /* ScrapBookTableViewController.m */; };
+		B74A4CED17FC15090005D572 /* DetailScrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CEB17FC15090005D572 /* DetailScrapViewController.m */; };
+		B74A4CEE17FC15090005D572 /* DetailScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74A4CEC17FC15090005D572 /* DetailScrapViewController.xib */; };
+		B74A4CF417FC1F870005D572 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CF317FC1F870005D572 /* TabBarController.m */; };
+		B74A4CF717FC20880005D572 /* InstagramTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CF617FC20880005D572 /* InstagramTableViewController.m */; };
+		B74A4CFA17FC22660005D572 /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CF917FC22660005D572 /* ImageView.m */; };
+		B74A4CFF17FC229C0005D572 /* FlickrTagSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CFC17FC229C0005D572 /* FlickrTagSearcher.m */; };
+		B74A4D0017FC229C0005D572 /* InstagramTagSearcher.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4CFE17FC229C0005D572 /* InstagramTagSearcher.m */; };
+		B74A4D0317FC22BB0005D572 /* FlickrTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B74A4D0217FC22BB0005D572 /* FlickrTableViewController.m */; };
+		B7AB7E3F180F44CB00B247CA /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7AB7E3E180F44CB00B247CA /* CameraViewController.m */; };
+		B7B194471805111000D3E391 /* EditScrapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7B194451805111000D3E391 /* EditScrapViewController.m */; };
+		B7B194481805111000D3E391 /* EditScrapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7B194461805111000D3E391 /* EditScrapViewController.xib */; };
+		B7FD0B58181F913300B33FD2 /* CropperViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FD0B57181F913300B33FD2 /* CropperViewController.m */; };
+		B7FD0B5A1820CE0000B33FD2 /* scrapbook.sql in Resources */ = {isa = PBXBuildFile; fileRef = B7FD0B591820CE0000B33FD2 /* scrapbook.sql */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B70A16A317FBCCC700728B94 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B70A167B17FBCCC700728B94 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B70A168217FBCCC700728B94;
+			remoteInfo = ScrapBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B70A168317FBCCC700728B94 /* ScrapBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrapBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70A168617FBCCC700728B94 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B70A168817FBCCC700728B94 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B70A168A17FBCCC700728B94 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B70A168E17FBCCC700728B94 /* ScrapBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrapBook-Info.plist"; sourceTree = "<group>"; };
+		B70A169017FBCCC700728B94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B70A169217FBCCC700728B94 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B70A169417FBCCC700728B94 /* ScrapBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScrapBook-Prefix.pch"; sourceTree = "<group>"; };
+		B70A169517FBCCC700728B94 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B70A169617FBCCC700728B94 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B70A169817FBCCC700728B94 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B70A169E17FBCCC700728B94 /* ScrapBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrapBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B70A169F17FBCCC700728B94 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B70A16A717FBCCC700728B94 /* ScrapBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScrapBookTests-Info.plist"; sourceTree = "<group>"; };
+		B70A16A917FBCCC700728B94 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B70A16AB17FBCCC700728B94 /* ScrapBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrapBookTests.m; sourceTree = "<group>"; };
+		B70A16B817FBCD4E00728B94 /* Scrap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scrap.h; sourceTree = "<group>"; };
+		B70A16B917FBCD4E00728B94 /* Scrap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scrap.m; sourceTree = "<group>"; };
+		B7136E0D180E9DFD00F01E24 /* AddScrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddScrapViewController.h; sourceTree = "<group>"; };
+		B7136E0E180E9DFD00F01E24 /* AddScrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddScrapViewController.m; sourceTree = "<group>"; };
+		B7136E0F180E9DFD00F01E24 /* AddScrapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddScrapViewController.xib; sourceTree = "<group>"; };
+		B722E759180398AD00A748C1 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		B722E9521803994A00A748C1 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		B722E9531803994A00A748C1 /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		B72751DF18174BD70085C8CF /* CropRegionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropRegionView.h; sourceTree = "<group>"; };
+		B72751E018174BD70085C8CF /* CropRegionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropRegionView.m; sourceTree = "<group>"; };
+		B74A4CDF17FBEBDE0005D572 /* ScrapBookTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrapBookTableViewController.h; sourceTree = "<group>"; };
+		B74A4CE017FBEBDE0005D572 /* ScrapBookTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrapBookTableViewController.m; sourceTree = "<group>"; };
+		B74A4CEA17FC15090005D572 /* DetailScrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailScrapViewController.h; sourceTree = "<group>"; };
+		B74A4CEB17FC15090005D572 /* DetailScrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailScrapViewController.m; sourceTree = "<group>"; };
+		B74A4CEC17FC15090005D572 /* DetailScrapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailScrapViewController.xib; sourceTree = "<group>"; };
+		B74A4CF217FC1F870005D572 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		B74A4CF317FC1F870005D572 /* TabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		B74A4CF517FC20880005D572 /* InstagramTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramTableViewController.h; sourceTree = "<group>"; };
+		B74A4CF617FC20880005D572 /* InstagramTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramTableViewController.m; sourceTree = "<group>"; };
+		B74A4CF817FC22660005D572 /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
+		B74A4CF917FC22660005D572 /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
+		B74A4CFB17FC229C0005D572 /* FlickrTagSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrTagSearcher.h; sourceTree = "<group>"; };
+		B74A4CFC17FC229C0005D572 /* FlickrTagSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrTagSearcher.m; sourceTree = "<group>"; };
+		B74A4CFD17FC229C0005D572 /* InstagramTagSearcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstagramTagSearcher.h; sourceTree = "<group>"; };
+		B74A4CFE17FC229C0005D572 /* InstagramTagSearcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstagramTagSearcher.m; sourceTree = "<group>"; };
+		B74A4D0117FC22BB0005D572 /* FlickrTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlickrTableViewController.h; sourceTree = "<group>"; };
+		B74A4D0217FC22BB0005D572 /* FlickrTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrTableViewController.m; sourceTree = "<group>"; };
+		B7AB7E3D180F44CB00B247CA /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		B7AB7E3E180F44CB00B247CA /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		B7B194441805111000D3E391 /* EditScrapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditScrapViewController.h; sourceTree = "<group>"; };
+		B7B194451805111000D3E391 /* EditScrapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditScrapViewController.m; sourceTree = "<group>"; };
+		B7B194461805111000D3E391 /* EditScrapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditScrapViewController.xib; sourceTree = "<group>"; };
+		B7FD0B56181F913300B33FD2 /* CropperViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CropperViewController.h; sourceTree = "<group>"; };
+		B7FD0B57181F913300B33FD2 /* CropperViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CropperViewController.m; sourceTree = "<group>"; };
+		B7FD0B591820CE0000B33FD2 /* scrapbook.sql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scrapbook.sql; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B70A168017FBCCC700728B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B722E75A180398AD00A748C1 /* libsqlite3.dylib in Frameworks */,
+				B70A168917FBCCC700728B94 /* CoreGraphics.framework in Frameworks */,
+				B70A168B17FBCCC700728B94 /* UIKit.framework in Frameworks */,
+				B70A168717FBCCC700728B94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70A169B17FBCCC700728B94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70A16A017FBCCC700728B94 /* XCTest.framework in Frameworks */,
+				B70A16A217FBCCC700728B94 /* UIKit.framework in Frameworks */,
+				B70A16A117FBCCC700728B94 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B70A167A17FBCCC700728B94 = {
+			isa = PBXGroup;
+			children = (
+				B70A168C17FBCCC700728B94 /* ScrapBook */,
+				B70A16A517FBCCC700728B94 /* ScrapBookTests */,
+				B70A168517FBCCC700728B94 /* Frameworks */,
+				B70A168417FBCCC700728B94 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B70A168417FBCCC700728B94 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B70A168317FBCCC700728B94 /* ScrapBook.app */,
+				B70A169E17FBCCC700728B94 /* ScrapBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B70A168517FBCCC700728B94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B722E759180398AD00A748C1 /* libsqlite3.dylib */,
+				B70A168617FBCCC700728B94 /* Foundation.framework */,
+				B70A168817FBCCC700728B94 /* CoreGraphics.framework */,
+				B70A168A17FBCCC700728B94 /* UIKit.framework */,
+				B70A169F17FBCCC700728B94 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B70A168C17FBCCC700728B94 /* ScrapBook */ = {
+			isa = PBXGroup;
+			children = (
+				B70A169517FBCCC700728B94 /* AppDelegate.h */,
+				B70A169617FBCCC700728B94 /* AppDelegate.m */,
+				B7AB7E3D180F44CB00B247CA /* CameraViewController.h */,
+				B7AB7E3E180F44CB00B247CA /* CameraViewController.m */,
+				B74A4CDF17FBEBDE0005D572 /* ScrapBookTableViewController.h */,
+				B74A4CE017FBEBDE0005D572 /* ScrapBookTableViewController.m */,
+				B7136E0D180E9DFD00F01E24 /* AddScrapViewController.h */,
+				B7136E0E180E9DFD00F01E24 /* AddScrapViewController.m */,
+				B7136E0F180E9DFD00F01E24 /* AddScrapViewController.xib */,
+				B7B194441805111000D3E391 /* EditScrapViewController.h */,
+				B7B194451805111000D3E391 /* EditScrapViewController.m */,
+				B7B194461805111000D3E391 /* EditScrapViewController.xib */,
+				B74A4CEA17FC15090005D572 /* DetailScrapViewController.h */,
+				B74A4CEB17FC15090005D572 /* DetailScrapViewController.m */,
+				B74A4CEC17FC15090005D572 /* DetailScrapViewController.xib */,
+				B7FD0B56181F913300B33FD2 /* CropperViewController.h */,
+				B7FD0B57181F913300B33FD2 /* CropperViewController.m */,
+				B72751DF18174BD70085C8CF /* CropRegionView.h */,
+				B72751E018174BD70085C8CF /* CropRegionView.m */,
+				B7136E12180E9E3C00F01E24 /* ImageSearch */,
+				B70A16B817FBCD4E00728B94 /* Scrap.h */,
+				B70A16B917FBCD4E00728B94 /* Scrap.m */,
+				B722E9521803994A00A748C1 /* Database.h */,
+				B722E9531803994A00A748C1 /* Database.m */,
+				B70A169817FBCCC700728B94 /* Images.xcassets */,
+				B70A168D17FBCCC700728B94 /* Supporting Files */,
+				B7FD0B591820CE0000B33FD2 /* scrapbook.sql */,
+			);
+			path = ScrapBook;
+			sourceTree = "<group>";
+		};
+		B70A168D17FBCCC700728B94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B70A168E17FBCCC700728B94 /* ScrapBook-Info.plist */,
+				B70A168F17FBCCC700728B94 /* InfoPlist.strings */,
+				B70A169217FBCCC700728B94 /* main.m */,
+				B70A169417FBCCC700728B94 /* ScrapBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B70A16A517FBCCC700728B94 /* ScrapBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				B70A16AB17FBCCC700728B94 /* ScrapBookTests.m */,
+				B70A16A617FBCCC700728B94 /* Supporting Files */,
+			);
+			path = ScrapBookTests;
+			sourceTree = "<group>";
+		};
+		B70A16A617FBCCC700728B94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B70A16A717FBCCC700728B94 /* ScrapBookTests-Info.plist */,
+				B70A16A817FBCCC700728B94 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7136E12180E9E3C00F01E24 /* ImageSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B74A4CF217FC1F870005D572 /* TabBarController.h */,
+				B74A4CF317FC1F870005D572 /* TabBarController.m */,
+				B74A4CF517FC20880005D572 /* InstagramTableViewController.h */,
+				B74A4CF617FC20880005D572 /* InstagramTableViewController.m */,
+				B74A4D0117FC22BB0005D572 /* FlickrTableViewController.h */,
+				B74A4D0217FC22BB0005D572 /* FlickrTableViewController.m */,
+				B74A4CF817FC22660005D572 /* ImageView.h */,
+				B74A4CF917FC22660005D572 /* ImageView.m */,
+				B74A4CFB17FC229C0005D572 /* FlickrTagSearcher.h */,
+				B74A4CFC17FC229C0005D572 /* FlickrTagSearcher.m */,
+				B74A4CFD17FC229C0005D572 /* InstagramTagSearcher.h */,
+				B74A4CFE17FC229C0005D572 /* InstagramTagSearcher.m */,
+			);
+			name = ImageSearch;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B70A168217FBCCC700728B94 /* ScrapBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70A16AF17FBCCC700728B94 /* Build configuration list for PBXNativeTarget "ScrapBook" */;
+			buildPhases = (
+				B70A167F17FBCCC700728B94 /* Sources */,
+				B70A168017FBCCC700728B94 /* Frameworks */,
+				B70A168117FBCCC700728B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrapBook;
+			productName = ScrapBook;
+			productReference = B70A168317FBCCC700728B94 /* ScrapBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B70A169D17FBCCC700728B94 /* ScrapBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70A16B217FBCCC700728B94 /* Build configuration list for PBXNativeTarget "ScrapBookTests" */;
+			buildPhases = (
+				B70A169A17FBCCC700728B94 /* Sources */,
+				B70A169B17FBCCC700728B94 /* Frameworks */,
+				B70A169C17FBCCC700728B94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B70A16A417FBCCC700728B94 /* PBXTargetDependency */,
+			);
+			name = ScrapBookTests;
+			productName = ScrapBookTests;
+			productReference = B70A169E17FBCCC700728B94 /* ScrapBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B70A167B17FBCCC700728B94 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kevin Choi";
+				TargetAttributes = {
+					B70A169D17FBCCC700728B94 = {
+						TestTargetID = B70A168217FBCCC700728B94;
+					};
+				};
+			};
+			buildConfigurationList = B70A167E17FBCCC700728B94 /* Build configuration list for PBXProject "ScrapBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B70A167A17FBCCC700728B94;
+			productRefGroup = B70A168417FBCCC700728B94 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B70A168217FBCCC700728B94 /* ScrapBook */,
+				B70A169D17FBCCC700728B94 /* ScrapBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B70A168117FBCCC700728B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7B194481805111000D3E391 /* EditScrapViewController.xib in Resources */,
+				B7FD0B5A1820CE0000B33FD2 /* scrapbook.sql in Resources */,
+				B74A4CEE17FC15090005D572 /* DetailScrapViewController.xib in Resources */,
+				B70A169117FBCCC700728B94 /* InfoPlist.strings in Resources */,
+				B7136E11180E9DFD00F01E24 /* AddScrapViewController.xib in Resources */,
+				B70A169917FBCCC700728B94 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70A169C17FBCCC700728B94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70A16AA17FBCCC700728B94 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B70A167F17FBCCC700728B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7AB7E3F180F44CB00B247CA /* CameraViewController.m in Sources */,
+				B74A4CF417FC1F870005D572 /* TabBarController.m in Sources */,
+				B722E9541803994A00A748C1 /* Database.m in Sources */,
+				B72751E118174BD70085C8CF /* CropRegionView.m in Sources */,
+				B7136E10180E9DFD00F01E24 /* AddScrapViewController.m in Sources */,
+				B74A4CE117FBEBDE0005D572 /* ScrapBookTableViewController.m in Sources */,
+				B74A4CED17FC15090005D572 /* DetailScrapViewController.m in Sources */,
+				B74A4CFF17FC229C0005D572 /* FlickrTagSearcher.m in Sources */,
+				B74A4D0017FC229C0005D572 /* InstagramTagSearcher.m in Sources */,
+				B70A169717FBCCC700728B94 /* AppDelegate.m in Sources */,
+				B70A169317FBCCC700728B94 /* main.m in Sources */,
+				B74A4D0317FC22BB0005D572 /* FlickrTableViewController.m in Sources */,
+				B7FD0B58181F913300B33FD2 /* CropperViewController.m in Sources */,
+				B7B194471805111000D3E391 /* EditScrapViewController.m in Sources */,
+				B74A4CF717FC20880005D572 /* InstagramTableViewController.m in Sources */,
+				B74A4CFA17FC22660005D572 /* ImageView.m in Sources */,
+				B70A16BA17FBCD4E00728B94 /* Scrap.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B70A169A17FBCCC700728B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B70A16AC17FBCCC700728B94 /* ScrapBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B70A16A417FBCCC700728B94 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B70A168217FBCCC700728B94 /* ScrapBook */;
+			targetProxy = B70A16A317FBCCC700728B94 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B70A168F17FBCCC700728B94 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B70A169017FBCCC700728B94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B70A16A817FBCCC700728B94 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B70A16A917FBCCC700728B94 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B70A16AD17FBCCC700728B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B70A16AE17FBCCC700728B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B70A16B017FBCCC700728B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrapBook/ScrapBook-Prefix.pch";
+				INFOPLIST_FILE = "ScrapBook/ScrapBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B70A16B117FBCCC700728B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrapBook/ScrapBook-Prefix.pch";
+				INFOPLIST_FILE = "ScrapBook/ScrapBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		B70A16B317FBCCC700728B94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrapBook.app/ScrapBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrapBook/ScrapBook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ScrapBookTests/ScrapBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		B70A16B417FBCCC700728B94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ScrapBook.app/ScrapBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ScrapBook/ScrapBook-Prefix.pch";
+				INFOPLIST_FILE = "ScrapBookTests/ScrapBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B70A167E17FBCCC700728B94 /* Build configuration list for PBXProject "ScrapBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70A16AD17FBCCC700728B94 /* Debug */,
+				B70A16AE17FBCCC700728B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70A16AF17FBCCC700728B94 /* Build configuration list for PBXNativeTarget "ScrapBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70A16B017FBCCC700728B94 /* Debug */,
+				B70A16B117FBCCC700728B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70A16B217FBCCC700728B94 /* Build configuration list for PBXNativeTarget "ScrapBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B70A16B317FBCCC700728B94 /* Debug */,
+				B70A16B417FBCCC700728B94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B70A167B17FBCCC700728B94 /* Project object */;
+}
