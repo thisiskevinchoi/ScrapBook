@@ -1,10 +1,3 @@
--App Icon
--Custom Color Scheme
--Larger ScrapBook Cells
--Titles for each 'page' - Add, Edit, Scrap, ScrapBook
--Edit functionality
--Pictures are scaled while maintaining their aspect ratio (in all 'pages')
--Reused cells' subviews are cleared before configuring the cell (no overlapping cells in table views)
--Alerts if trying to save a Scrap without a Name, Picture, or Details
--Placeholders for all text fields (clears when user clicks on text field)
--Logically clears fields when adding new Scrap, keeps query when returning from adding a picture, maintains fields when editing a Scrap
+ScrapBook App for Mobile Software Development
+
+This ScrapBook app lets you create 'scraps' consisting of a picture, title, and details.
